@@ -16,7 +16,7 @@
         z = 0,
         bool = true,
         interval;
-        
+
     const cube = document.querySelector('.cube');
 
     document.querySelector('.top-x-control').addEventListener('click', () => {
@@ -129,13 +129,13 @@
             watchBottomControl.classList.remove('hideControl');
         }
 
-        if(axisX === 280) {
+        if(axisX === -280) {
             watchRightControl.classList.add('hideControl');
         } else {
             watchRightControl.classList.remove('hideControl');
         }
 
-        if(axisX === -280) {
+        if(axisX === 280) {
             watchLeftControl.classList.add('hideControl');
         } else {
             watchLeftControl.classList.remove('hideControl');
@@ -151,11 +151,11 @@
         hideControl();
     });
     watchRightControl.addEventListener('click', () => {
-        watchBands.style.marginRight = `${axisX += 70}rem`;
+        watchBands.style.marginRight = `${axisX -= 70}rem`;
         hideControl();
     });
     watchLeftControl.addEventListener('click', () => {
-        watchBands.style.marginRight = `${axisX -= 70}rem`;
+        watchBands.style.marginRight = `${axisX += 70}rem`;
         hideControl();
     });
     // end of section 4
