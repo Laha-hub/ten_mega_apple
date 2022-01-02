@@ -16,6 +16,7 @@
         z = 0,
         bool = true,
         interval;
+        
     const cube = document.querySelector('.cube');
 
     document.querySelector('.top-x-control').addEventListener('click', () => {
@@ -141,7 +142,6 @@
         }
     };
 
-
     watchTopControl.addEventListener('click', () => {
         watchCases.style.marginTop = `${axisY -= 70}rem`;
         hideControl();
@@ -158,7 +158,5 @@
         watchBands.style.marginRight = `${axisX -= 70}rem`;
         hideControl();
     });
-
-
     // end of section 4
 }
