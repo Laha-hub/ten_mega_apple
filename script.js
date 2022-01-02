@@ -2,7 +2,7 @@
 
 {
     // common js
-    document.querySelectorAll('.controls a, .watch-control').forEach(control => {
+    document.querySelectorAll('.controls a, .watch-control, .iphone-btn').forEach(control => {
         control.addEventListener('click', e => {
             e.preventDefault();
         });
