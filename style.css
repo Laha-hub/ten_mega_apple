@@ -140,7 +140,7 @@ html {
 
 .back-side::before,
 .back-side::after {
-    content: 'iPhone';
+    content: 'ePhone';
     width: 10rem;
     height: 100%;
     background-color: #fee;
